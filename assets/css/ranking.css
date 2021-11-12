@@ -1,0 +1,296 @@
+a .fa-trophy {
+    color: #e9d62f;
+}
+
+.ranking-players {
+    min-width: 55%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--card-border-color);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    background-color: var(--box-background-color);
+}
+
+.ranking-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.difficult-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ranking-config span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.difficult-buttons button.active {
+    background-color: #2b66c0;
+    color: white;
+}
+
+.difficult-buttons button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+    background-color: var(--background-color-highlight);
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0px 5px;
+}
+
+.ranking-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-players {
+    max-width: 450px;
+}
+
+.player-data {
+    border-left: solid #dddddd 2px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.player-data h5 span {
+    color: var(--text-color);
+}
+
+.player-data h5 {
+    color: var(--text-color-alt);
+}
+
+.ranking-first-place,
+.ranking-second-place,
+.ranking-third-place {
+    /*background-color: rgb(83, 145, 189);*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--ranking-background-color);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    height:  85px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    /*margin-bottom: 5px;*/
+}
+
+.ranking-first-place .placing,
+.ranking-second-place .placing,
+.ranking-third-place .placing {
+    background-color: #bbbbbb21;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    margin-right: 3px;
+}
+
+.ranking-first-place .placing i,
+.ranking-second-place .placing i,
+.ranking-third-place .placing i {
+    font-size: 1.75rem;
+}
+
+.ranking-first-place .placing span,
+.ranking-second-place .placing span,
+.ranking-third-place .placing span {
+    position: absolute;
+    font-weight: 900;
+}
+
+.ranking-first-place .placing i{
+    color: #e9d62f;
+}
+
+.ranking-second-place .placing i{
+    color: #c78a58;
+}
+
+.ranking-third-place .placing i{
+    color: #cacaca;
+}
+
+.ranking-first-place .placing span {
+    position: absolute;
+    top: 10px;
+    color: rgb(206, 188, 31);
+    left: 22px;
+    font-weight: 900;
+}
+
+.ranking-second-place .placing span {
+    position: absolute;
+    top: 10px;
+    color: rgb(170, 117, 74);
+    left: 21px;
+    font-weight: 900;
+}
+
+.ranking-third-place .placing span {
+    position: absolute;
+    top: 10px;
+    color: #b1b0b0;
+    left: 21px;
+    font-weight: 900;
+}
+
+.ranking-first-place .player-name h3,
+.ranking-second-place .player-name h3,
+.ranking-third-place .player-name h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+.ranking-first-place .player-name,
+.ranking-second-place .player-name,
+.ranking-third-place .player-name {
+    position: relative;
+    display: inline-block;
+    color: var(--text-color-alt);
+    text-transform: uppercase;
+    width: 320px;
+}
+
+.other-players {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    overflow: auto;
+}
+
+.other-players::-webkit-scrollbar {
+    width: 8px;
+}
+
+.other-players::-webkit-scrollbar-track {
+    background-color: var(--scroll-background-color);
+    border-radius: 30px;
+}
+
+.other-players::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);    
+    border-radius: 20px;
+}
+
+.other-players .o-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ranking-background-color-alt);
+    margin: 10px 0px;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+}
+
+.other-players .o-player .o-player-place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    clip-path: circle();
+    padding: 20px;
+    margin: 0px 7px 0px 5px;
+    overflow: hidden;
+}
+
+.other-players .o-player .o-player-place span {
+    position: relative;
+    font-weight: 800;
+    color: var(--text-color-alt);
+}
+
+.other-players .o-player .o-player-name {
+    display: flex;
+    align-items: center;
+}
+
+.other-players .o-player .o-player-name i {
+    margin: 0px 3px;
+    color: var(--ranking-medal-color);
+}
+
+.other-players .o-player .o-player-name h5 {
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    color: var(--text-color);
+
+}
+
+.other-players .o-player .o-player-data {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 100%;
+    padding: 15px;
+    border-left: solid var(--ranking-border-left-color) 5px;
+}
+
+.other-players .o-player .o-player-data span {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.error-loading {
+    color: rgb(199, 65, 65);
+    font-size: 12px;
+}
+
+.circle-loader .load {
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #096faa;
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes is-rotating {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.ranking-first-place .player-name h1,
+.ranking-second-place .player-name h1,
+.ranking-third-place .player-name h1 {
+    
+}
+
+
+.ranking-first-place .player-name {
+}
+
+.ranking-second-place .player-name {
+}
+
+.ranking-third-place .player-name {
+}
